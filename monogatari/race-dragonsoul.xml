@@ -4,7 +4,7 @@
         <name>Dragonsoul</name>
         <author>irockayII</author>
         <coauthor>taro</coauthor>
-        <update version="0.0.4">
+        <update version="0.0.5">
             <file name="race-dragonsoul.xml" url="https://raw.githubusercontent.com/irockayII/monogatari/master/monogatari/race-dragonsoul.xml" />
         </update>
     </info>
@@ -64,7 +64,7 @@
             <grant type="Racial Trait" id="ID_MG_RACIAL_TRAIT_DRAGONSOUL_ANCESTRAL_LEGACY" />
         </rules>
     </element>
-    <element name="Ancestral Legacy" type="Racial Trait" source="" id="ID_RACIAL_TRAIT_DRAGONSOUL_ANCESTRAL_LEGACY">
+    <element name="Ancestral Legacy" type="Racial Trait" source="" id="ID_MG_RACIAL_TRAIT_DRAGONSOUL_ANCESTRAL_LEGACY">
         <description>
             <p>If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it.</p>
             <p class="indent">If you don’t keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice.</p>
