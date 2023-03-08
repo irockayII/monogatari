@@ -60,8 +60,7 @@
             <grant type="Vision" id="ID_VISION_DARKVISION" />
             <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID" />
             <grant type="Racial Trait" id="ID_MG_RACIAL_TRAIT_DRAGONSOUL_ANCESTRAL_LEGACY" />
-            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
-            <grant type="Racial Trait" id="ID_MG_RACIAL_TRAIT_DRAGONSOUL_ANCESTRAL_LEGACY" />
+            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />            
         </rules>
     </element>
     <element name="Ancestral Legacy" type="Racial Trait" source="" id="ID_MG_RACIAL_TRAIT_DRAGONSOUL_ANCESTRAL_LEGACY">
