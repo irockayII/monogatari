@@ -24,6 +24,6 @@
 		<!-- Items -->
 					    
 		<!-- Sources -->		
-		<file name="sources.xml" url="https://raw.githubusercontent.com/irockayII/monogatari/master/monogatari/sources.xml" />
+		<file name="sources.xml" url="https://raw.githubusercontent.com/irockayII/monogatari/master/monogatari/source.xml" />
 	</files>
 </index>
