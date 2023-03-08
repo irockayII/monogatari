@@ -4,7 +4,7 @@
         <name>Dragonsoul</name>
         <author>irockayII</author>
         <coauthor>taro</coauthor>
-        <update version="0.0.2">
+        <update version="0.0.4">
             <file name="race-dragonsoul.xml" url="https://raw.githubusercontent.com/irockayII/monogatari/master/monogatari/race-dragonsoul.xml" />
         </update>
     </info>
