@@ -1,0 +1,20 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="sources.xml" url="https://raw.githubusercontent.com/irockayII/monogatari/master/monogatari/sources.xml" />
+		</update>
+	</info>
+	<element name="Monogatari" type="Source" source="Monogatari" id="ID_HOMEBREW_SOURCE_MONOGATARI">
+		<description>
+			<![CDATA[<p>Monogatari</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">MONOGATARI</set>
+			<set name="url">https://github.com/irockayII/monogatari</set>
+			<set name="author">irockayII</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>

@@ -3,8 +3,7 @@
 	<info>
 		<name>monogatari</name>
 		<description>The 5e homebrew content from the monogatari campaign.</description>
-		<author>irockayII</author>
-		<coauthor>taro</coauthor>
+		<author>irockayII</author>		
 		<update version="0.0.0.0">
 			<file name="monogatari.index" url="https://raw.githubusercontent.com/irockayII/monogatari/master/monogatari.index" />
 		</update>
@@ -25,6 +24,6 @@
 		<!-- Items -->
 					    
 		<!-- Sources -->		
-		
+		<file name="sources.xml" url="https://raw.githubusercontent.com/irockayII/monogatari/master/monogatari/sources.xml" />
 	</files>
 </index>
