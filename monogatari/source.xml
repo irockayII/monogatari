@@ -3,7 +3,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="sources.xml" url="https://raw.githubusercontent.com/irockayII/monogatari/master/monogatari/source.xml" />
+			<file name="source.xml" url="https://raw.githubusercontent.com/irockayII/monogatari/master/monogatari/source.xml" />
 		</update>
 	</info>
 	<element name="Monogatari" type="Source" source="Monogatari" id="ID_HOMEBREW_SOURCE_MONOGATARI">
