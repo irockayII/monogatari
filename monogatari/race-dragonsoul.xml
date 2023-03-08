@@ -49,10 +49,10 @@
             <p class="indent">
                 <strong>
                     <em>Languages.</em>
-                </strong> Your character can additionally speak, read, and write Draconic.
+                </strong> Your character can additionally speak, read and write Draconic.
             </p>
         </description>
-        <sheet display="false" />
+        <sheet display="true" />
         <rules>
             <select type="Ability Score Improvement" name="Ability Score Improvement Option (Dragonsoul)" supports="Custom Ability Score Improvement Option" />
             <grant type="Language" id="ID_LANGUAGE_DRACONIC"/>
@@ -60,7 +60,12 @@
             <grant type="Vision" id="ID_VISION_DARKVISION" />
             <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID" />
             <grant type="Racial Trait" id="ID_MG_RACIAL_TRAIT_DRAGONSOUL_ANCESTRAL_LEGACY" />
-            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />            
+            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />   
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_NATURAL_ARMOR" />  
+            <grant type="Racial Trait" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_SLASHES" />  
+            <grant type="Racial Trait" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_BREATH"/>
+            <grant type="Racial Trait" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_SWEEP"/>
+            <grant type="Racial Trait" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_FLIGHT"/>
         </rules>
     </element>
     <element name="Ancestral Legacy" type="Racial Trait" source="" id="ID_MG_RACIAL_TRAIT_DRAGONSOUL_ANCESTRAL_LEGACY">
@@ -192,7 +197,7 @@
             <stat name="ac:natural armor dragonsoul:constitution" value="constitution:modifier" />
             <stat name="ac:natural armor dragonsoul" value="ac:natural armor dragonsoul:base" />
             <stat name="ac:natural armor dragonsoul" value="ac:natural armor dragonsoul:dexterity" />
-            <stat name="ac:natural armor dragonsoul" value="ac:natural armor {dragonsoul:constitution}/2" />
+            <stat name="ac:natural armor dragonsoul" value="ac:natural armor dragonsoul:constitution" />
             <stat name="ac:calculation" value="ac:natural armor dragonsoul" bonus="calculation" equipped="[armor:none]" alt="Natural Armor (Dragonsoul)" />
         </rules>
     </element>
@@ -202,10 +207,7 @@
         </description>
         <sheet action="Action">
             <description>You gain the ability to breefly manifest the claws of a dragon and make two attacks with your natural weapons and deal 1d6+{{constitution:modifier}} bludgeoning, slashing or piercing damage.</description>
-        </sheet>
-        <rules>
-            <grant type="Racial Trait" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_SLASHES" level="3" />
-        </rules>
+        </sheet>       
     </element>
     <element name="Draconic Manifestation Feature: Draconic Breath" type="Racial Trait" source="Monogatari" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_BREATH">
         <description>
@@ -222,8 +224,7 @@
             <stat name="breath-weapon:dice count" value="2" level="5" />
             <stat name="breath-weapon:dice count" value="1" level="9" />
             <stat name="breath-weapon:dice count" value="1" level="12" />
-            <stat name="breath-weapon:dice count" value="1" level="17" />
-            <grant type="Racial Trait" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_BREATH" level="5" />
+            <stat name="breath-weapon:dice count" value="1" level="17" />            
         </rules>
     </element>
     <element name="Draconic Manifestation Feature: Draconic Sweep" type="Racial Trait" source="Monogatari" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_SWEEP">
@@ -234,10 +235,7 @@
             <description>
                 You gain the ability to breefly manifest the tail of a dragonand make one sweeping attack with it. You can hit up to three enemies within 5 feet of you and deal 1d6+{{constitution:modifier}} bludgeoning damage.
             </description>
-        </sheet>
-        <rules>
-            <grant type="Racial Trait" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_SWEEP" level="7" />
-        </rules>
+        </sheet>        
     </element>
     <element name="Draconic Manifestation Feature: Draconic Flight" type="Racial Trait" source="Monogatari" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_FLIGHT">
         <description>
@@ -245,10 +243,7 @@
         </description>
         <sheet action="Action">
             <description>You gain the ability to breefly manifest the wings of a dragon and gain a flying speed of 60 feet. You are able to carry one additional creature of medium size or smaller with you.</description>
-        </sheet>
-        <rules>
-            <grant type="Racial Trait" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_FLIGHT" level="11" />
-        </rules>
+        </sheet>        
     </element>
     <element name="Draconic Ancestry (Black)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLACK">
         <supports>Draconic Ancestry</supports>
@@ -377,7 +372,7 @@
         </rules>
     </element>
     <element name="Draconic Ancestry (White)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_WHITE">
-    <supports>Draconic Ancestry</supports>
+        <supports>Draconic Ancestry</supports>
         <description>
             <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
         </description>
