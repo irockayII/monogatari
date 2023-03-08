@@ -244,6 +244,7 @@
         </sheet>
         <rules>
             <grant type="Racial Trait" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_FLIGHT" level="11" />
+         </rules>
         </element>
         <element name="Draconic Ancestry (Black)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLACK">
             <supports>Draconic Ancestry</supports>
