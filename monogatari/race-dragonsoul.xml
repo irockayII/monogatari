@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Dragonsoul</name>
+    </info>
+    <element name="Dragonsoul" type="Race" source="Monogatari" id="ID_RACE_DRAGONSOUL">
+        <description>
+            <p>
+            Born with a fragment of a dragonsoul bound within. It lays mostly dorment within the bearer and slowly changing them, adapting to the draconic fragment of their soul. However the fragment grows with the bearer until their souls become one. Why somone is born with the fragment of a dragonsoul is not unkown, however it seems, that this phenomena only accures in Kozakura and Wa.</p>
+            <p class="indent">Your appereance is mostly that of your race. However you partly covered with scales on some bodyparts. As you grow on your journey more and more of your body get covered by it.</p>
+            <p class="indent">A dragons personality ist bound to their soul, not their corporal from. Therefore inheriting a fragment of the soul means inheriting a fragment of the personality and traits seen at the draconic heritage table.</p>
+            <p>You have the following racial traits.</p>
+            <p class="indent">
+                <strong>
+                    <em>Ability Score Increase.</em>
+                </strong> Increase one score by 2 or you increase two different scores by 1.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Creature Type.</em>
+                </strong> You are a Humanoid.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Size.</em>
+                </strong> You are Medium.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Speed.</em>
+                </strong> Your walking speed is 30 feet.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Ancestral Legacy.</em>
+                </strong> If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it, any languages and any climbing, flying, or swimming speed you gained from it.
+            </p>
+            <p class="indent">If you don’t keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice.</p>
+            <p class="indent">
+                <strong>
+                    <em>Darkvision.</em>
+                </strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness as shades of gray.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Languages.</em>
+                </strong> Your character can additionally speak, read, and write Draconic.
+            </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Improvement Option (Dragonsoul)" supports="Custom Ability Score Improvement Option" />
+            <grant type="Language" id="ID_LANGUAGE_DRACONIC"/>
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID" />
+            <grant type="Racial Trait" id="ID_MG_RACIAL_TRAIT_DRAGONSOUL_ANCESTRAL_LEGACY" />
+            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+            <grant type="Racial Trait" id="ID_MG_RACIAL_TRAIT_DRAGONSOUL_ANCESTRAL_LEGACY" />
+        </rules>
+    </element>
+    <element name="Ancestral Legacy" type="Racial Trait" source="" id="ID_RACIAL_TRAIT_DRAGONSOUL_ANCESTRAL_LEGACY">
+        <description>
+            <p>If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it.</p>
+            <p class="indent">If you don’t keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice.</p>
+            <p>
+                <strong>
+                    <em>Notes:</em>
+                </strong> This trait's mechanics aren't implemented in the Aurora Builder. But you can emulate mechanics of this trait with following options:
+            </p>
+            <p class="indent">
+                <b>Skill Proficiencies.</b> You can recover lost skill proficiencies by selecting and equipping items from Additional Proficiency category of the Equipment section.
+            </p>
+            <p class="indent">
+                <b>Speed.</b> You can regain lost speed by selecting and equipping items from Additional Features category of the Equipment section.
+            </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency (Ancestral Legacy)" number="2" supports="Skill" optional="true" />
+        </rules>
+    </element>
+    <element name="Draconic Ancestry" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY">
+        <description>
+            <p>You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.</p>
+            <h5>DRACONIC HERITAGE</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Dragon</td>
+                        <td>Damage Type</td>
+                        <td>Breath Weapon</td>
+                        <td>Alignment</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Black</td>
+                    <td>Acid</td>
+                    <td>5 by 30 ft. line (Dex. save)</td>
+                    <td>Chaotic evil</td>
+                </tr>
+                <tr>
+                    <td>Blue</td>
+                    <td>Lightning</td>
+                    <td>5 by 30 ft. line (Dex. save)</td>
+                    <td>Lawfull evil</td>
+                </tr>
+                <tr>
+                    <td>Green</td>
+                    <td>Poison</td>
+                    <td>15 ft. cone (Con. save)</td>
+                    <td>Lawfull evil</td>
+                </tr>
+                <tr>
+                    <td>Red</td>
+                    <td>Fire</td>
+                    <td>15 ft. cone (Dex. save)</td>
+                    <td>Chaotic evil</td>
+                </tr>
+                <tr>
+                    <td>White</td>
+                    <td>Cold</td>
+                    <td>15 ft. cone (Con. save)</td>
+                    <td>Chaotic evil</td>
+                </tr>
+                <tr>
+                    <td>Brass</td>
+                    <td>Fire</td>
+                    <td>5 by 30 ft. line (Dex. save)</td>
+                    <td>Chaotic Good</td>
+                </tr>
+                <tr>
+                    <td>Bronze</td>
+                    <td>Lightning</td>
+                    <td>5 by 30 ft. line (Dex. save)</td>
+                    <td>Lawfull Good</td>
+                </tr>
+                <tr>
+                    <td>Copper</td>
+                    <td>Acid</td>
+                    <td>5 by 30 ft. line (Dex. save)</td>
+                    <td>Chaotic Good</td>
+                </tr>
+                <tr>
+                    <td>Gold</td>
+                    <td>Fire</td>
+                    <td>15 ft. cone (Dex. save)</td>
+                    <td>Lawfull Good</td>
+                </tr>
+                <tr>
+                    <td>Silver</td>
+                    <td>Cold</td>
+                    <td>15 ft. cone (Con. save)</td>
+                    <td>Lawfull Good</td>
+                </tr>
+            </table>
+        </description>
+        <rules>
+            <select type="Racial Trait" name="Draconic Heritage" supports="Draconic Heritage" />
+        </rules>
+    </element>
+    <element name="Damage Resistance" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DAMAGE_RESISTANCE">
+        <description>
+            <p>You have resistance to the damage type associated with your draconic ancestry.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to {{draconic-ancestry:damage type}}.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" requirements="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLACK||ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_COPPER" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" requirements="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLUE||ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BRONZE" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BRASS||ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_GOLD||ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_RED" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" requirements="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_GREEN" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_SILVER||ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_WHITE" />
+            <grant type="Racial Trait" id="ID_WOTC_VGTM_RACIAL_TRAIT_DRAGONSOUL_BREATH_WEAPON" level="5" />
+        </rules>
+    </element>
+    <element name="Natural Armor" type="Class Feature" source="monogatari" id="ID_RACIAL_TRAIT_NATURAL_ARMOR">
+        <description>
+            <p>While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + half your Constitution modifier. You can use a shield and still gain this benefit.</p>
+        </description>
+        <sheet>
+            <description>While you aren’t wearing armor, your AC equals {{ac:natural armor dragonsoul}}. You can use a shield and still gain this benefit.</description>
+        </sheet>
+        <rules>
+            <stat name="natural armor dragonsoul:base" value="10" />
+            <stat name="ac:natural armor dragonsoul:dexterity" value="dexterity:modifier" />
+            <stat name="ac:natural armor dragonsoul:constitution" value="constitution:modifier" />
+            <stat name="ac:natural armor dragonsoul" value="ac:natural armor dragonsoul:base" />
+            <stat name="ac:natural armor dragonsoul" value="ac:natural armor dragonsoul:dexterity" />
+            <stat name="ac:natural armor dragonsoul" value="ac:natural armor {dragonsoul:constitution}/2" />
+            <stat name="ac:calculation" value="ac:natural armor dragonsoul" bonus="calculation" equipped="[armor:none]" alt="Natural Armor (Dragonsoul)" />
+        </rules>
+    </element>
+    <element name="Draconic Manifestation Feature: Draconic Slashes" type="Racial Trait" source="Monogatari" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_SLASHES">
+        <description>
+            <p>You gain the ability to breefly manifest the claws of a dragon and make two attacks with your natural weapons and deal 1d6+{{constitution:modifier}} bludgeoning, slashing or piercing damage.</p>
+        </description>
+        <sheet action="Action">
+            <description>You gain the ability to breefly manifest the claws of a dragon and make two attacks with your natural weapons and deal 1d6+{{constitution:modifier}} bludgeoning, slashing or piercing damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_SLASHES" level="3" />
+        </rules>
+    </element>
+    <element name="Draconic Manifestation Feature: Draconic Breath" type="Racial Trait" source="Monogatari" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_BREATH">
+        <description>
+            <p>You gain the ability to breefly manifest the snout of a dragon and exhale destructive energy. Your breath weapon does {{breath-weapon:dice count}}d{{breath-weapon:dice size}} {{draconic-ancestry:damage type}} damage in a {{draconic-ancestry:breath}} DC {{breath-weapon:dc}}</p>
+        </description>
+        <sheet action="Action">
+            <description>You gain the ability to breefly manifest the snout of a dragon and exhale destructive energy. Your breath weapon does {{breath-weapon:dice count}}d{{breath-weapon:dice size}} {{draconic-ancestry:damage type}} damage in a {{draconic-ancestry:breath}} DC {{breath-weapon:dc}}</description>
+        </sheet>
+        <rules>
+            <stat name="breath-weapon:dc" value="8" />
+            <stat name="breath-weapon:dc" value="constitution:modifier" />
+            <stat name="breath-weapon:dc" value="proficiency" />
+            <stat name="breath-weapon:dice size" value="6" bonus="dice" />
+            <stat name="breath-weapon:dice count" value="2" level="5" />
+            <stat name="breath-weapon:dice count" value="1" level="9" />
+            <stat name="breath-weapon:dice count" value="1" level="12" />
+            <stat name="breath-weapon:dice count" value="1" level="17" />
+            <grant type="Racial Trait" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_BREATH" level="5" />
+        </rules>
+    </element>
+    <element name="Draconic Manifestation Feature: Draconic Sweep" type="Racial Trait" source="Monogatari" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_SWEEP">
+        <description>
+            <p>You gain the ability to breefly manifest the tail of a dragonand make one sweeping attack with it. You can hit up to three enemies within 5 feet of you and deal 1d6+{{constitution:modifier}} bludgeoning damage.</p>
+        </description>
+        <sheet action="Action">
+            <description>
+                You gain the ability to breefly manifest the tail of a dragonand make one sweeping attack with it. You can hit up to three enemies within 5 feet of you and deal 1d6+{{constitution:modifier}} bludgeoning damage.
+            </description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_SWEEP" level="7" />
+        </rules>
+    </element>
+    <element name="Draconic Manifestation Feature: Draconic Flight" type="Racial Trait" source="Monogatari" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_FLIGHT">
+        <description>
+            <p>You gain the ability to breefly manifest the wings of a dragon and gain a flying speed of 60 feet. You are able to carry one additional creature of medium size or smaller with you.</p>
+        </description>
+        <sheet action="Action">
+            <description>You gain the ability to breefly manifest the wings of a dragon and gain a flying speed of 60 feet. You are able to carry one additional creature of medium size or smaller with you.</description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_FLIGHT" level="11" />
+        </element>
+        <element name="Draconic Ancestry (Black)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLACK">
+            <supports>Draconic Ancestry</supports>
+            <description>
+                <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+            </description>
+            <sheet alt="Black">
+                <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+            </sheet>
+            <rules>
+                <stat inline="true" name="draconic-ancestry" value="Black"/>
+                <stat inline="true" name="draconic-ancestry:damage type" value="Acid" />
+                <stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
+            </rules>
+        </element>
+        <element name="Draconic Ancestry (Blue)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLUE">
+            <supports>Draconic Ancestry</supports>
+            <description>
+                <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+            </description>
+            <sheet alt="Blue">
+                <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+            </sheet>
+            <rules>
+                <stat inline="true" name="draconic-ancestry" value="Blue"/>
+                <stat inline="true" name="draconic-ancestry:damage type" value="Lightning" />
+                <stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
+            </rules>
+        </element>
+        <element name="Draconic Ancestry (Brass)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BRASS">
+            <supports>Draconic Ancestry</supports>
+            <description>
+                <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+            </description>
+            <sheet alt="Brass">
+                <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+            </sheet>
+            <rules>
+                <stat inline="true" name="draconic-ancestry" value="Brass"/>
+                <stat inline="true" name="draconic-ancestry:damage type" value="Fire" />
+                <stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
+            </rules>
+        </element>
+        <element name="Draconic Ancestry (Bronze)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BRONZE">
+            <supports>Draconic Ancestry</supports>
+            <description>
+                <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+            </description>
+            <sheet alt="Bronze">
+                <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+            </sheet>
+            <rules>
+                <stat inline="true" name="draconic-ancestry" value="Bronze"/>
+                <stat inline="true" name="draconic-ancestry:damage type" value="Lightning" />
+                <stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
+            </rules>
+        </element>
+        <element name="Draconic Ancestry (Copper)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_COPPER">
+            <supports>Draconic Ancestry</supports>
+            <description>
+                <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+            </description>
+            <sheet alt="Copper">
+                <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+            </sheet>
+            <rules>
+                <stat inline="true" name="draconic-ancestry" value="Copper"/>
+                <stat inline="true" name="draconic-ancestry:damage type" value="Acid" />
+                <stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
+            </rules>
+        </element>
+        <element name="Draconic Ancestry (Gold)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_GOLD">
+            <supports>Draconic Ancestry</supports>
+            <description>
+                <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+            </description>
+            <sheet alt="Gold">
+                <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+            </sheet>
+            <rules>
+                <stat inline="true" name="draconic-ancestry" value="Gold"/>
+                <stat inline="true" name="draconic-ancestry:damage type" value="Fire" />
+                <stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Dex. save)" />
+            </rules>
+        </element>
+        <element name="Draconic Ancestry (Green)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_GREEN">
+            <supports>Draconic Ancestry</supports>
+            <description>
+                <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+            </description>
+            <sheet alt="Green">
+                <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+            </sheet>
+            <rules>
+                <stat inline="true" name="draconic-ancestry" value="Green"/>
+                <stat inline="true" name="draconic-ancestry:damage type" value="Poison" />
+                <stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Con. save)" />
+            </rules>
+        </element>
+        <element name="Draconic Ancestry (Red)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_RED">
+            <supports>Draconic Ancestry</supports>
+            <description>
+                <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+            </description>
+            <sheet alt="Red">
+                <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+            </sheet>
+            <rules>
+                <stat inline="true" name="draconic-ancestry" value="Red"/>
+                <stat inline="true" name="draconic-ancestry:damage type" value="Fire" />
+                <stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Dex. save)" />
+            </rules>
+        </element>
+        <element name="Draconic Ancestry (Silver)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_SILVER">
+            <supports>Draconic Ancestry</supports>
+            <description>
+                <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+            </description>
+            <sheet alt="Silver">
+                <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+            </sheet>
+            <rules>
+                <stat inline="true" name="draconic-ancestry" value="Silver"/>
+                <stat inline="true" name="draconic-ancestry:damage type" value="Cold" />
+                <stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Con. save)" />
+            </rules>
+        </element>
+        <element name="Draconic Ancestry (White)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_WHITE">
+        </element>
+    </element>
+</elements>

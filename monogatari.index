@@ -4,13 +4,13 @@
 		<name>monogatari</name>
 		<description>The 5e homebrew content from the monogatari campaign.</description>
 		<author>irockayII</author>		
-		<update version="0.0.0.0">
+		<update version="0.0.0.1">
 			<file name="monogatari.index" url="https://raw.githubusercontent.com/irockayII/monogatari/master/monogatari.index" />
 		</update>
 	</info>
 	<files>
 		<!-- Races -->
-	
+		<file name="race-dragonsoul.xml" url="https://raw.githubusercontent.com/irockayII/monogatari/master/monogatari/race-dragonsoul.xml" />
 		<!-- Classes -->		
 		
 		<!-- Archetype -->
