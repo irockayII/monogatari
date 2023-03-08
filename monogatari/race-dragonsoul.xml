@@ -244,135 +244,146 @@
         </sheet>
         <rules>
             <grant type="Racial Trait" id="ID_MG_RACIAL_TRAIT_DRACONIC_MANIFESTAION_FEATURE_DRACONIC_FLIGHT" level="11" />
-         </rules>
-        </element>
-        <element name="Draconic Ancestry (Black)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLACK">
-            <supports>Draconic Ancestry</supports>
-            <description>
-                <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
-            </description>
-            <sheet alt="Black">
-                <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
-            </sheet>
-            <rules>
-                <stat inline="true" name="draconic-ancestry" value="Black"/>
-                <stat inline="true" name="draconic-ancestry:damage type" value="Acid" />
-                <stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
-            </rules>
-        </element>
-        <element name="Draconic Ancestry (Blue)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLUE">
-            <supports>Draconic Ancestry</supports>
-            <description>
-                <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
-            </description>
-            <sheet alt="Blue">
-                <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
-            </sheet>
-            <rules>
-                <stat inline="true" name="draconic-ancestry" value="Blue"/>
-                <stat inline="true" name="draconic-ancestry:damage type" value="Lightning" />
-                <stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
-            </rules>
-        </element>
-        <element name="Draconic Ancestry (Brass)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BRASS">
-            <supports>Draconic Ancestry</supports>
-            <description>
-                <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
-            </description>
-            <sheet alt="Brass">
-                <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
-            </sheet>
-            <rules>
-                <stat inline="true" name="draconic-ancestry" value="Brass"/>
-                <stat inline="true" name="draconic-ancestry:damage type" value="Fire" />
-                <stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
-            </rules>
-        </element>
-        <element name="Draconic Ancestry (Bronze)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BRONZE">
-            <supports>Draconic Ancestry</supports>
-            <description>
-                <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
-            </description>
-            <sheet alt="Bronze">
-                <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
-            </sheet>
-            <rules>
-                <stat inline="true" name="draconic-ancestry" value="Bronze"/>
-                <stat inline="true" name="draconic-ancestry:damage type" value="Lightning" />
-                <stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
-            </rules>
-        </element>
-        <element name="Draconic Ancestry (Copper)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_COPPER">
-            <supports>Draconic Ancestry</supports>
-            <description>
-                <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
-            </description>
-            <sheet alt="Copper">
-                <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
-            </sheet>
-            <rules>
-                <stat inline="true" name="draconic-ancestry" value="Copper"/>
-                <stat inline="true" name="draconic-ancestry:damage type" value="Acid" />
-                <stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
-            </rules>
-        </element>
-        <element name="Draconic Ancestry (Gold)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_GOLD">
-            <supports>Draconic Ancestry</supports>
-            <description>
-                <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
-            </description>
-            <sheet alt="Gold">
-                <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
-            </sheet>
-            <rules>
-                <stat inline="true" name="draconic-ancestry" value="Gold"/>
-                <stat inline="true" name="draconic-ancestry:damage type" value="Fire" />
-                <stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Dex. save)" />
-            </rules>
-        </element>
-        <element name="Draconic Ancestry (Green)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_GREEN">
-            <supports>Draconic Ancestry</supports>
-            <description>
-                <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
-            </description>
-            <sheet alt="Green">
-                <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
-            </sheet>
-            <rules>
-                <stat inline="true" name="draconic-ancestry" value="Green"/>
-                <stat inline="true" name="draconic-ancestry:damage type" value="Poison" />
-                <stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Con. save)" />
-            </rules>
-        </element>
-        <element name="Draconic Ancestry (Red)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_RED">
-            <supports>Draconic Ancestry</supports>
-            <description>
-                <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
-            </description>
-            <sheet alt="Red">
-                <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
-            </sheet>
-            <rules>
-                <stat inline="true" name="draconic-ancestry" value="Red"/>
-                <stat inline="true" name="draconic-ancestry:damage type" value="Fire" />
-                <stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Dex. save)" />
-            </rules>
-        </element>
-        <element name="Draconic Ancestry (Silver)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_SILVER">
-            <supports>Draconic Ancestry</supports>
-            <description>
-                <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
-            </description>
-            <sheet alt="Silver">
-                <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
-            </sheet>
-            <rules>
-                <stat inline="true" name="draconic-ancestry" value="Silver"/>
-                <stat inline="true" name="draconic-ancestry:damage type" value="Cold" />
-                <stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Con. save)" />
-            </rules>
-        </element>
-        <element name="Draconic Ancestry (White)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_WHITE">
-        </element>
+        </rules>
+    </element>
+    <element name="Draconic Ancestry (Black)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLACK">
+        <supports>Draconic Ancestry</supports>
+        <description>
+            <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+        </description>
+        <sheet alt="Black">
+            <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+        </sheet>
+        <rules>
+            <stat inline="true" name="draconic-ancestry" value="Black"/>
+            <stat inline="true" name="draconic-ancestry:damage type" value="Acid" />
+            <stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
+        </rules>
+    </element>
+    <element name="Draconic Ancestry (Blue)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLUE">
+        <supports>Draconic Ancestry</supports>
+        <description>
+            <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+        </description>
+        <sheet alt="Blue">
+            <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+        </sheet>
+        <rules>
+            <stat inline="true" name="draconic-ancestry" value="Blue"/>
+            <stat inline="true" name="draconic-ancestry:damage type" value="Lightning" />
+            <stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
+        </rules>
+    </element>
+    <element name="Draconic Ancestry (Brass)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BRASS">
+        <supports>Draconic Ancestry</supports>
+        <description>
+            <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+        </description>
+        <sheet alt="Brass">
+            <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+        </sheet>
+        <rules>
+            <stat inline="true" name="draconic-ancestry" value="Brass"/>
+            <stat inline="true" name="draconic-ancestry:damage type" value="Fire" />
+            <stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
+        </rules>
+    </element>
+    <element name="Draconic Ancestry (Bronze)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BRONZE">
+        <supports>Draconic Ancestry</supports>
+        <description>
+            <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+        </description>
+        <sheet alt="Bronze">
+            <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+        </sheet>
+        <rules>
+            <stat inline="true" name="draconic-ancestry" value="Bronze"/>
+            <stat inline="true" name="draconic-ancestry:damage type" value="Lightning" />
+            <stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
+        </rules>
+    </element>
+    <element name="Draconic Ancestry (Copper)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_COPPER">
+        <supports>Draconic Ancestry</supports>
+        <description>
+            <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+        </description>
+        <sheet alt="Copper">
+            <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+        </sheet>
+        <rules>
+            <stat inline="true" name="draconic-ancestry" value="Copper"/>
+            <stat inline="true" name="draconic-ancestry:damage type" value="Acid" />
+            <stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
+        </rules>
+    </element>
+    <element name="Draconic Ancestry (Gold)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_GOLD">
+        <supports>Draconic Ancestry</supports>
+        <description>
+            <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+        </description>
+        <sheet alt="Gold">
+            <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+        </sheet>
+        <rules>
+            <stat inline="true" name="draconic-ancestry" value="Gold"/>
+            <stat inline="true" name="draconic-ancestry:damage type" value="Fire" />
+            <stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Dex. save)" />
+        </rules>
+    </element>
+    <element name="Draconic Ancestry (Green)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_GREEN">
+        <supports>Draconic Ancestry</supports>
+        <description>
+            <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+        </description>
+        <sheet alt="Green">
+            <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+        </sheet>
+        <rules>
+            <stat inline="true" name="draconic-ancestry" value="Green"/>
+            <stat inline="true" name="draconic-ancestry:damage type" value="Poison" />
+            <stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Con. save)" />
+        </rules>
+    </element>
+    <element name="Draconic Ancestry (Red)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_RED">
+        <supports>Draconic Ancestry</supports>
+        <description>
+            <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+        </description>
+        <sheet alt="Red">
+            <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+        </sheet>
+        <rules>
+            <stat inline="true" name="draconic-ancestry" value="Red"/>
+            <stat inline="true" name="draconic-ancestry:damage type" value="Fire" />
+            <stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Dex. save)" />
+        </rules>
+    </element>
+    <element name="Draconic Ancestry (Silver)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_SILVER">
+        <supports>Draconic Ancestry</supports>
+        <description>
+            <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+        </description>
+        <sheet alt="Silver">
+            <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+        </sheet>
+        <rules>
+            <stat inline="true" name="draconic-ancestry" value="Silver"/>
+            <stat inline="true" name="draconic-ancestry:damage type" value="Cold" />
+            <stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Con. save)" />
+        </rules>
+    </element>
+    <element name="Draconic Ancestry (White)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_WHITE">
+    <supports>Draconic Ancestry</supports>
+        <description>
+            <div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+        </description>
+        <sheet alt="White">
+            <description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+        </sheet>
+        <rules>
+            <stat inline="true" name="draconic-ancestry" value="White"/>
+            <stat inline="true" name="draconic-ancestry:damage type" value="Cold" />
+            <stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Con. save)" />
+        </rules>
     </element>
 </elements>
