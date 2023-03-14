@@ -192,12 +192,14 @@
             <description>While you aren’t wearing armor, your AC equals {{ac:natural armor dragonsoul}}. You can use a shield and still gain this benefit.</description>
         </sheet>
         <rules>
-            <stat name="natural armor dragonsoul:base" value="10" />
+            <stat name="ac:natural armor dragonsoul:base" value="10"/>
             <stat name="ac:natural armor dragonsoul:dexterity" value="dexterity:modifier" />
-            <stat name="ac:natural armor dragonsoul:constitution" value="constitution:modifier" />
+            <stat name="ac:natural armor dragonsoul:constitution" value="constitution:modifier:half:up" />
+
             <stat name="ac:natural armor dragonsoul" value="ac:natural armor dragonsoul:base" />
             <stat name="ac:natural armor dragonsoul" value="ac:natural armor dragonsoul:dexterity" />
             <stat name="ac:natural armor dragonsoul" value="ac:natural armor dragonsoul:constitution" />
+
             <stat name="ac:calculation" value="ac:natural armor dragonsoul" bonus="calculation" equipped="[armor:none]" alt="Natural Armor (Dragonsoul)" />
         </rules>
     </element>
